@@ -19,3 +19,17 @@ footer {
   text-align: center;
   display: block;
 }
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/145/original/ChatGPT_Image_2025%E5%B9%B46%E6%9C%881%E6%97%A5_%E4%B8%8B%E5%8D%8810_06_28.png?1748817620");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.clock-container {
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
