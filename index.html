@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Fleur+De+Leah&family=Fredericka+the+Great&family=Indie+Flower&family=Love+Ya+Like+A+Sister&family=Margarine&family=Pacifico&family=Rouge+Script&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -28,25 +30,25 @@
        <div class="cityClock">
         <div class="NY"> 
           <p id="city">New York🇺🇸</p>
-          <p id="date">ddmmyy</p>
+          <p class="nydate" id="date">ddmmyy</p>
         </div>
-          <div class="time">01.01.1970</div>
+          <div class="time" id="newyork">hhmm</div>
        </div>
 
        <div class="cityClock">
-        <div class="London"> 
-          <p id="city">London</p>
-          <p id="date">ddmmyy</p>
+        <div class="Ldn"> 
+          <p id="city">London🇬🇧</p>
+          <p class="ldndate" id="date">ddmmyy</p>
         </div>
-          <div class="time">01.01.1970</div>
+          <div class="time" id="london">hhmm</div>
        </div>
 
        <div class="cityClock_last">
-        <div class="Tokyo"> 
-          <p id="city">Tokyo</p>
-          <p id="date">ddmmyy</p>
+        <div class="Tky"> 
+          <p id="city">Tokyo🇯🇵</p>
+          <p class="tkydate" id="date">ddmmyy</p>
         </div>
-          <div class="time">01.01.1970</div>
+          <div class="time" id="tokyo">hhmm</div>
        </div>
 
    
