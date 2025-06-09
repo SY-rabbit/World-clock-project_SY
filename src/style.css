@@ -140,3 +140,23 @@ select {
   position: relative;
   top: -170px;
 }
+#backButton {
+  display: flex;
+  justify-content: center;
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  margin: 15px auto;
+  border-radius: 5px;
+  border: dotted 2px chocolate;
+  color: rgb(242, 235, 228);
+  background-color: rgb(90, 39, 4);
+  width: 30%;
+}
+#backButton:hover {
+  background-color: rgb(242, 235, 228);
+  color: rgb(90, 39, 4);
+}

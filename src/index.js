@@ -70,3 +70,15 @@ function DisplayCityTime(event) {
 
 let selectcity = document.querySelector("#cityList");
 selectcity.addEventListener("change", DisplayCityTime);
+
+//back to main clock//
+function BackToMainClock() {
+  let clockContainer = document.querySelector("#clockContainer");
+  let clockContainer2 = document.querySelector("#clockContainer2");
+  clockContainer.classList.remove("hidden");
+  clockContainer2.classList.add("hidden");
+}
+let backToMainClockButton = document.querySelector(
+  "#backButton"
+);
+backToMainClockButton.addEventListener("click", BackToMainClock);
