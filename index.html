@@ -27,7 +27,8 @@
         <option value="America/Los_Angeles">Los Angeles</option>
        </select>
 
-       <div class="cityClock">
+      <div id="clockContainer">
+        <div class="cityClock">
         <div class="NY"> 
           <p id="city">New York🇺🇸</p>
           <p class="nydate" id="date">ddmmyy</p>
@@ -35,8 +36,8 @@
           <div class="time" id="newyork">hhmm</div>
        </div>
 
-       <div class="cityClock">
-        <div class="Ldn"> 
+        <div class="cityClock_ldn"> 
+        <div class="Ldn">
           <p id="city">London🇬🇧</p>
           <p class="ldndate" id="date">ddmmyy</p>
         </div>
@@ -50,7 +51,16 @@
         </div>
           <div class="time" id="tokyo">hhmm</div>
        </div>
-
+      </div>
+      
+      <div id="clockContainer2" class="hidden">
+        <div class="cityClock2">
+          <div class="NY"> 
+            <p id="selectedcity">Name</p>
+            <p id="selectedcitydate">ddmmyy</p>
+          </div>
+            <div id="selectedcitytime">hhmm</div>
+       </div>
    
   </main>
     <footer>

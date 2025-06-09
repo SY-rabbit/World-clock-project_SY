@@ -91,8 +91,52 @@ select {
   justify-content: space-between;
   border-bottom: 1px dotted rgba(210, 105, 30, 0.282);
 }
+.cityClock_ldn {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted rgba(210, 105, 30, 0.282);
+}
 
 .cityClock_last {
   display: flex;
   justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+#cityClock2 {
+  display: flex;
+  justify-content: space-between;
+}
+#selectedcity {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: 50px;
+  color: rgb(90, 39, 4);
+  padding-left: 20px;
+  line-height: 0%;
+}
+#selectedcitydate {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(126, 56, 5);
+  font-size: 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+#selectedcitytime {
+  font-family: "Margarine", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(104, 43, 3);
+  font-size: 60px;
+  padding: 10px;
+  text-align: right;
+  position: relative;
+  top: -170px;
 }

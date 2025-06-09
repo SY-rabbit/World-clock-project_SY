@@ -9,7 +9,7 @@ let ldntodayelement = document.querySelector(".ldndate");
 ldntodayelement.innerHTML = ldntoday;
 
 //Tokyo//
-let tkytoday = moment().tz("Aisa/Tokyo").format("Do MMMM YYYY");
+let tkytoday = moment().tz("Asia/Tokyo").format("Do MMMM YYYY");
 let tkytodayelement = document.querySelector(".tkydate");
 tkytodayelement.innerHTML = tkytoday;
 
@@ -40,3 +40,30 @@ setInterval(function () {
   let tkytimeelement = document.querySelector("#tokyo");
   tkytimeelement.innerHTML = tkytime;
 }, 1000);
+
+//City Clock//
+function DisplayCityTime(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment()
+    .tz(cityTimeZone)
+    .format("hh:mm:ss [<small>]A[</small>]");
+  let cityDate = moment().tz(cityTimeZone).format("Do MMMM YYYY");
+  console.log(cityTimeZone);
+  console.log(cityTime);
+  console.log(cityDate);
+  let a = document.querySelector("#selectedcitytime");
+  let b = document.querySelector("#selectedcitydate");
+  a.innerHTML = cityTime;
+  b.innerHTML = cityDate;
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityNameElement = document.querySelector("#selectedcity");
+  cityNameElement.innerHTML = cityName;
+
+  let clockContainer = document.querySelector("#clockContainer");
+  let clockContainer2 = document.querySelector("#clockContainer2");
+  clockContainer.classList.add("hidden");
+  clockContainer2.classList.remove("hidden");
+}
+
+let selectcity = document.querySelector("#cityList");
+selectcity.addEventListener("change", DisplayCityTime);
