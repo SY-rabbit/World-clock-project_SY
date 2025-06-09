@@ -44,6 +44,9 @@ setInterval(function () {
 //City Clock//
 function DisplayCityTime(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityTime = moment()
     .tz(cityTimeZone)
     .format("hh:mm:ss [<small>]A[</small>]");
