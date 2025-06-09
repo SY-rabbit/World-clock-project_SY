@@ -154,7 +154,7 @@ select {
   border: dotted 2px chocolate;
   color: rgb(242, 235, 228);
   background-color: rgb(90, 39, 4);
-  width: 30%;
+  width: 25%;
 }
 #backButton:hover {
   background-color: rgb(242, 235, 228);
